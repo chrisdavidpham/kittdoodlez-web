@@ -1,29 +1,25 @@
-import { Box, Button, Modal, Typography } from "@mui/material";
+import { Box, IconButton, Modal, Typography } from "@mui/material";
 import React from "react";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
 import cartStyle from './CartStyle';
-import './Cart.css';
 
 function Cart() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="cart">
-      <Button onClick={() => setOpen(true)}>
-        <ShoppingCartIcon fontSize="large" />
-      </Button>
+    <Box>
+      <IconButton onClick={() => setOpen(true)}>
+        <ShoppingCartTwoToneIcon fontSize="large" />
+      </IconButton>
       <Modal
         open={open}
         onClose={() => setOpen(false)}
-        sx={cartStyle}
       >
-        <Box>
-          <Typography variant="h2">
-            Cart
-          </Typography>
+        <Box sx={cartStyle}>
+          <Typography variant="h3">Cart</Typography>
         </Box>
       </Modal>
-    </div >
+    </Box>
   );
 }
 

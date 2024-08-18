@@ -1,18 +1,14 @@
-import './Header.css';
 import Cart from '../cart/Cart';
-import React from 'react';
+import { AppBar, Toolbar, Typography } from '@mui/material';
 
 function Header() {
-
   return (
-    <header className="header">
-      <div className='headerItem'>
-        <h1>Kittdoodlez</h1>
-      </div>
-      <div className='headerItem'>
-        <Cart/>
-      </div>
-    </header>
+    <AppBar position='static'>
+      <Toolbar>
+        <Typography variant='h2' sx={{ flexGrow: 1 }}>Kittdoodlez</Typography>
+        <Cart />
+      </Toolbar>
+    </AppBar>
   );
 }
 
