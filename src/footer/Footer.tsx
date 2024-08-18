@@ -3,10 +3,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 function Footer() {
   return (
-    <footer>
-      <a href="https://www.instagram.com/kittdoodlez">
-        <InstagramIcon />
-      </a>
+    <footer className="footer">
+      <div className='footerItem'>
+        <a href="https://www.instagram.com/kittdoodlez">
+          <InstagramIcon fontSize="large"/>
+        </a>
+      </div >
     </footer>
   )
 }
