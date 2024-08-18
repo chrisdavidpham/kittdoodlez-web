@@ -1,20 +1,14 @@
-import InstagramIcon from '@mui/icons-material/Instagram';
 import './App.css';
+import Footer from './footer/Footer';
 import Home from './Home';
+import Header from './header/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Kittdoodlez</h1>
-      </header>
+      <Header />
       <Home />
-      <footer>
-        <InstagramIcon />
-        <a href="https://www.instagram.com/kittdoodlez">
-          Instagram
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }
