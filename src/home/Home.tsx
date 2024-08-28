@@ -1,9 +1,10 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import Store from "../store/store";
 
 function Home() {
   return (
-    <Box>
-      <Typography variant="h1">Home</Typography>
+    <Box justifyContent={'center'} display={'flex'} mx={'5%'}>
+      <Store />
     </Box>
   );
 }

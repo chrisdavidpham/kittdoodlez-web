@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography } from '@mui/material';
 
 function Header() {
   return (
-    <AppBar position='static'>
+    <AppBar position='sticky'>
       <Toolbar>
         <Typography variant='h2' sx={{ flexGrow: 1 }}>Kittdoodlez</Typography>
         <Cart />
